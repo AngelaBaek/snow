@@ -2230,6 +2230,15 @@ input::-moz-focus-inner {
   left: 0;
 }
 
+@media screen and (max-width:400px) {
+
+.s-header{
+  z-index: 100;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transform: translateZ(-5px);
+  }
+}
+
 /* -------------------------------------------------------------------
  * ## header logo
  * ------------------------------------------------------------------- */
@@ -2542,6 +2551,7 @@ input::-moz-focus-inner {
 /* -------------------------------------------------------------------
  * ## header search trigger
  * ------------------------------------------------------------------- */
+
 .header__search-trigger {
   z-index: 1;
   display: block;
@@ -2590,6 +2600,7 @@ input::-moz-focus-inner {
 /* ------------------------------------------------------------------- 
  * ## header-search
  * ------------------------------------------------------------------- */
+ 
 .header__search {
   z-index: 400;
   display: block;
@@ -2648,6 +2659,7 @@ input::-moz-focus-inner {
 .header__search-form input[type="search"]::-webkit-input-placeholder {
 
   /* WebKit, Blink, Edge */
+
   color: #000000;
 }
 
@@ -2674,6 +2686,7 @@ input::-moz-focus-inner {
 .header__search-form input[type="search"]::-ms-input-placeholder {
 
   /* Microsoft Edge */
+
   color: #000000;
 }
 
@@ -2746,6 +2759,7 @@ body.search-is-visible {
  * responsive:
  * header
  * ------------------------------------------------------------------- */
+
 @media screen and (max-width:1600px) {
   .s-header {
     width: 290px;
@@ -2918,6 +2932,7 @@ body.search-is-visible {
 }
 
 @media screen and (max-width:600px) {
+
   .header__search-form input[type="search"] {
     font-size: 3.4rem;
   }
@@ -2932,12 +2947,13 @@ body.search-is-visible {
 }
 
 @media screen and (max-width:400px) {
+ 
   .header__logo {
     left: 3rem;
   }
 
   .header__nav-wrap {
-    padding: 140px 40px 64px;
+    padding: 90px 30px 64px;
   }
 
   .header__menu-toggle {
@@ -2952,9 +2968,14 @@ body.search-is-visible {
     font-size: 2.6rem;
   }
 
-}
+  .header__social {
+    position: absolute;
+    align-self: center;
+    bottom: 0;
+  }
 
 
+} 
 
 /* ===================================================================
  * # site content & footer 
@@ -3122,7 +3143,7 @@ body.search-is-visible {
 
 @media screen and (max-width:600px) {
   .s-content {
-    padding-top: 12.6rem;
+    padding-top: 12rem;
   }
 
   .content__page {
@@ -3141,10 +3162,14 @@ body.search-is-visible {
   .footer__copyright span::after {
     display: none;
   }
-
-
 }
 
+@media screen and (max-width:400px) {
+ 
+  .s-content {
+    padding-top: 10rem;
+  }
+}
 
 
 /* ===================================================================
@@ -3551,10 +3576,49 @@ body.search-is-visible {
   padding-top: 6rem;
 }
 
+
+/* -------------------------------------------------------------------
+ * ## format gallery
+ * ------------------------------------------------------------------- */
+.format-gallery .entry__thumb {
+  overflow: hidden;
+}
+
+.format-gallery .slider {
+  overflow: hidden;
+}
+
+.format-gallery .slick-dots {
+  text-align: left;
+  margin: 0;
+  padding: 0 2rem 0 2.4rem;
+  position: absolute;
+  top: auto;
+  bottom: 2.4rem;
+  left: 0;
+}
+
+.format-gallery .slider__slides {
+  cursor: pointer;
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.format-gallery .slider__slides.slick-initialized {
+  opacity: 1;
+  visibility: visible;
+}
+
+/*# sourceMappingURL=main.css.map */
+
+
 /* ------------------------------------------------------------------- 
  * responsive:
- * comments
  * ------------------------------------------------------------------- */
+
+
+
 @media screen and (max-width:1000px) {
   .comment__avatar img {
     height: 6rem;
@@ -3624,38 +3688,3 @@ body.search-is-visible {
   }
 
 }
-
-/* -------------------------------------------------------------------
- * ## format gallery
- * ------------------------------------------------------------------- */
-.format-gallery .entry__thumb {
-  overflow: hidden;
-}
-
-.format-gallery .slider {
-  overflow: hidden;
-}
-
-.format-gallery .slick-dots {
-  text-align: left;
-  margin: 0;
-  padding: 0 2rem 0 2.4rem;
-  position: absolute;
-  top: auto;
-  bottom: 2.4rem;
-  left: 0;
-}
-
-.format-gallery .slider__slides {
-  cursor: pointer;
-  overflow: hidden;
-  opacity: 0;
-  visibility: hidden;
-}
-
-.format-gallery .slider__slides.slick-initialized {
-  opacity: 1;
-  visibility: visible;
-}
-
-/*# sourceMappingURL=main.css.map */
