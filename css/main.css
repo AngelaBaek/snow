@@ -2230,14 +2230,6 @@ input::-moz-focus-inner {
   left: 0;
 }
 
-@media screen and (max-width:400px) {
-
-.s-header{
-  z-index: 100;
-  -webkit-transform-style: preserve-3d;
-  -webkit-transform: translateZ(-5px);
-  }
-}
 
 /* -------------------------------------------------------------------
  * ## header logo
