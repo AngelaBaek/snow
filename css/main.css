@@ -2795,11 +2795,11 @@ body.search-is-visible {
     left: 4rem;
   }
 
-  .header__logo img {
+/*  .header__logo img {
     width: 120px;
     height: 29px;
   }
-
+*/
   .header__nav-wrap {
     z-index: 99;
     background: #151515;
