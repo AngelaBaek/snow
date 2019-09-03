@@ -2982,6 +2982,11 @@ body.search-is-visible {
 /* -------------------------------------------------------------------
  * ## content
  * ------------------------------------------------------------------- */
+
+.content__text {
+  margin-bottom: 30px;
+}
+
 .s-content {
   padding-top: 6.4rem;
 }
@@ -2991,10 +2996,10 @@ body.search-is-visible {
   padding-bottom: 12rem;
 }
 
-.content__page img {
+/*.content__page img {
   margin-top: 3.2rem;
   margin-bottom: 3.2rem;
-}
+}*/
 
 .content__page-header {
   text-align: center;
@@ -3012,6 +3017,20 @@ body.search-is-visible {
 
 .entry__content img {
   border: 1px solid #f4f4f4;
+  margin: 0;
+}
+
+.entry__content_mov {
+  padding: 56.25% 0 0 0;
+  position:relative;
+}
+
+.entry__content_mov iframe {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
 }
 
 /* -------------------------------------------------------------------
