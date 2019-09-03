@@ -200,9 +200,7 @@ h6, .h6 {
   letter-spacing: 0.16rem;
 }
 
-p img {
-  margin: 0;
-}
+
 
 p.lead {
   font-family: "NanumSquare", 'Open sans', 'Roboto', 'AppleSDGothicNEO', 'Noto Sans KR', sans-serif;
@@ -3016,8 +3014,7 @@ body.search-is-visible {
 }
 
 .entry__content img {
-  border: 1px solid #f4f4f4;
-  margin: 0;
+/*  border: 1px solid #f4f4f4;*/
 }
 
 .entry__content_mov {
