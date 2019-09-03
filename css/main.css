@@ -200,13 +200,6 @@ h6, .h6 {
   letter-spacing: 0.16rem;
 }
 
-p {
-  margin-block-start: 0em;
-  margin-block-end: 0em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px
-
-}
 
 p.lead {
   font-family: "NanumSquare", 'Open sans', 'Roboto', 'AppleSDGothicNEO', 'Noto Sans KR', sans-serif;
@@ -3020,7 +3013,9 @@ body.search-is-visible {
 }
 
 .entry__content img {
-/*  border: 1px solid #f4f4f4;*/
+  display: block;
+  padding: 0;
+  margin: 0;
 }
 
 .entry__content_mov {
