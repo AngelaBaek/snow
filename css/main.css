@@ -1350,6 +1350,18 @@ input::-moz-focus-inner {
   width: 100%;
 }
 
+
+
+
+
+
+@media screen and (max-width:800px) {
+ .right {
+  margin-top: 0px;
+  }
+}
+
+
 /* ------------------------------------------------------------------- 
  * ## alert box 
  * ------------------------------------------------------------------- */
@@ -2164,6 +2176,7 @@ input::-moz-focus-inner {
 
 @media screen and (max-width:500px) {
   .display-1 {
+    word-break: keep-all;
     font-size: 4rem;
   }
 
@@ -2171,7 +2184,9 @@ input::-moz-focus-inner {
 
 @media screen and (max-width:400px) {
   .display-1 {
+    word-break: keep-all;
     font-size: 3.7rem;
+    margin-top: 0;
   }
 
 /*  .media-wrap {
