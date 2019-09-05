@@ -3057,6 +3057,9 @@ body.search-is-visible {
  * ## content + Lightbox Gallery = hgallery
  * ------------------------------------------------------------------- */
 
+.hes-gallery img {
+  display: block;
+}
 #hgallery {
   display: block;
   content: '';
