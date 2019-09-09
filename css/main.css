@@ -3009,7 +3009,7 @@ body.search-is-visible {
 
 .content__page {
   max-width: 1200px;
-  padding-bottom: 12rem;
+  padding-bottom: 5rem;
 }
 
 /*.content__page img {
@@ -3030,6 +3030,11 @@ body.search-is-visible {
   width: 900px;
   margin-left: auto;
   margin-right: auto;
+  font-size: 15px;
+  line-height: 26px;
+}
+
+.content__about p {
   font-size: 15px;
   line-height: 26px;
 }
