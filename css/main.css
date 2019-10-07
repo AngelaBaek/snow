@@ -535,7 +535,7 @@ form,
   margin-right: auto;
   /*padding-left: 15px;*/
   font-size: 15px;
-  line-height: 23px;
+  line-height: 22px;
   margin-bottom: 3.2rem;
 }
 
@@ -2287,7 +2287,7 @@ input::-moz-focus-inner {
   align-items: stretch;
   max-width: 100%;
   background-color: #ffffff;
-  margin-top: 3.2rem;
+  margin-top: 2.5rem;
 }
 
 .header__nav-wrap a {
@@ -2388,8 +2388,7 @@ input::-moz-focus-inner {
 
 
 .sub-menu li {
-/*  height: 60px;*/
-  padding: 5px 0;
+  padding: 8px 0;
 }
 .sub-menu .title {
   font-size: 14px;
@@ -2398,7 +2397,7 @@ input::-moz-focus-inner {
 }
 
 .sub-menu .tag {
-  font-size: 11px;
+  font-size: 13px;
   color: rgba(0, 0, 0, 0.4);
 }
 
