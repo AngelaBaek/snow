@@ -2291,7 +2291,7 @@ input::-moz-focus-inner {
 }
 
 .header__nav-wrap a {
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(0, 0, 0, 1);
 }
 
 .header__nav {
@@ -2392,7 +2392,6 @@ input::-moz-focus-inner {
 }
 .sub-menu .title {
   font-size: 14px;
-  display: block;
   color: rgba(0, 0, 0, 1);
 }
 
