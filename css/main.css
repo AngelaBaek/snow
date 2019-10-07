@@ -2115,7 +2115,7 @@ input::-moz-focus-inner {
 
 @media screen and (max-width:1400px) {
   .display-1 {
-    font-size: 5.2rem;
+    font-size: 5.6rem;
   }
 
 }
@@ -2132,7 +2132,7 @@ input::-moz-focus-inner {
 
 @media screen and (max-width:800px) {
   .display-1 {
-    font-size: 2em;
+    font-size: 5.6rem;
   }
 
   .masonry-wrap {
@@ -2161,7 +2161,7 @@ input::-moz-focus-inner {
 
 @media screen and (max-width:600px) {
   .display-1 {
-    font-size: 4.2rem;
+    font-size: 4.8rem;
   }
 
   .masonry-wrap,
@@ -2181,7 +2181,7 @@ input::-moz-focus-inner {
 @media screen and (max-width:500px) {
   .display-1 {
     word-break: keep-all;
-    font-size: 4rem;
+    font-size: 4.5rem;
   }
 
 }
@@ -2189,7 +2189,7 @@ input::-moz-focus-inner {
 @media screen and (max-width:400px) {
   .display-1 {
     word-break: keep-all;
-    font-size: 3.7rem;
+    font-size: 4rem;
     margin-top: 3rem;
   }
 
@@ -3333,7 +3333,7 @@ body.search-is-visible {
   }
 
   .s-content {
-    padding-top: 14.2rem;
+    padding-top: 10rem;
   }
 
   .content__page {
@@ -3349,18 +3349,14 @@ body.search-is-visible {
 
 @media screen and (max-width:600px) {
   .s-content {
-    padding-top: 12rem;
+    padding-top: 10rem;
   }
 
   .content__page {
     padding-bottom: 4rem;
   }
 
-/*  .content__page img {
-  margin-top: 0rem;
-  margin-bottom: 3.2rem;
-}
-*/
+f.display-1
   .footer__copyright span {
     display: block;
   }
