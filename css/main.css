@@ -2270,6 +2270,8 @@ input::-moz-focus-inner {
  * ## header main navigation
  * ------------------------------------------------------------------- */
 .header__nav-wrap {
+  display: block;
+  position: relative;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
@@ -2297,32 +2299,38 @@ input::-moz-focus-inner {
   padding: 0;
 }
 
-.header__nav-wrap a {
-  color: rgba(0, 0, 0, 1);
-}
-
 
 .header__nav-wrap li {
   padding: 8px 0;
+  position: relative;
+  display: inline;
+  
 }
 
-.header__nav-wrap a:active, 
-.header__nav-wrap a:current {
-  display: block;
-  background-color: transparent;
-  color: rgba(109, 0, 215, 1);
-  z-index: 999;
+.header__nav-wrap .item {
+  color: rgba(0, 0, 0, 1);
+}
+/*.header__nav-wrap li.item:hover,
+.header__nav-wrap li.item:active, 
+.header__nav-wrap li.item:current {
+  color: #6d00fb;
+}*/
+.sub-item a:active {
+  display: inline-block;
+  color: #6d00fb;
 }
 
-.header__nav-wrap .title {
+.sub-item .title {
   font-size: 15px;
   color: rgba(0, 0, 0, 1);
 }
 
-.header__nav-wrap .tag {
+.sub-item .tag {
   font-size: 13px;
   color: rgba(0, 0, 0, 0.4);
 }
+
+
 
 /*
 .header__nav {
