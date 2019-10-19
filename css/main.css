@@ -2223,7 +2223,10 @@ input::-moz-focus-inner {
   position: relative;
 }
 
+
 .s-header {
+  height:100px;
+  width: 250px;
   z-index: 100;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -2231,13 +2234,13 @@ input::-moz-focus-inner {
   -webkit-flex-flow: column nowrap;
   -ms-flex-flow: column nowrap;
   flex-flow: column nowrap;
-  width: 300px;
   background-color: #ffffff;
-  padding-top: 6.4rem;
+  padding-top: 5rem;
   padding-right: 3.2rem;
   padding-left: 4.4rem;
   vertical-align: top;
   position: fixed;
+  overflow-x: hidden;
   bottom: 0;
   top: 0;
   left: 0;
@@ -2269,6 +2272,29 @@ input::-moz-focus-inner {
 /* -------------------------------------------------------------------
  * ## header main navigation
  * ------------------------------------------------------------------- */
+
+.header__list {
+  width: 250px;
+  height:100%;
+  z-index: 100;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: column nowrap;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  background-color: #ffffff;
+  padding-right: 3.2rem;
+  padding-left: 4.4rem;
+  vertical-align: top;
+  position: fixed;
+  overflow-x: hidden;
+  bottom: 0;
+  top: 100px;
+  left: 0;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
 .header__nav-wrap {
   display: block;
   position: relative;
@@ -2301,9 +2327,10 @@ input::-moz-focus-inner {
 
 
 .header__nav-wrap li {
+  height: 60px;
   padding: 8px 0;
-  position: relative;
-  display: inline;
+/*  position: relative;
+  display: inline;*/
   
 }
 
@@ -2315,6 +2342,11 @@ input::-moz-focus-inner {
 .header__nav-wrap li.item:current {
   color: #6d00fb;
 }*/
+
+.sub_item {
+  height: 50px;
+}
+
 .sub-item a:active {
   display: inline-block;
   color: #6d00fb;
@@ -2326,7 +2358,7 @@ input::-moz-focus-inner {
 }
 
 .sub-item .tag {
-  font-size: 13px;
+  font-size: 11px;
   color: rgba(0, 0, 0, 0.4);
 }
 
@@ -2704,17 +2736,30 @@ body.search-is-visible {
  * responsive:
  * header
  * ------------------------------------------------------------------- */
+@media only screen and (-webkit-min-device-pixel-ratio: 1) and (max-width: 1100px) and (min-width: 320px){
+
+  .dimm .nav-wrap-is-visible{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 8;
+    display: block;
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+}
 
 @media screen and (max-width:1600px) {
   .s-header {
-    width: 290px;
+    width: 250px;
   }
 
 }
 
 @media screen and (max-width:1200px) {
   .s-header {
-    width: 270px;
+    width: 250px;
     padding-right: 2.8rem;
     padding-left: 4rem;
   }
@@ -2754,11 +2799,23 @@ body.search-is-visible {
     left: 4rem;
   }
 
+
 /*  .header__logo img {
     width: 120px;
     height: 29px;
   }
 */
+
+  .header__list {
+    width: 100%;
+    background: transparent;
+    padding: 0;
+    position: static;
+    top:0;
+    bottom: auto;
+  }
+
+
   .header__nav-wrap {
     z-index: 99;
     background: #ffffff;
@@ -2777,14 +2834,11 @@ body.search-is-visible {
     overflow-y: auto;
   }
 
-  .nav-wrap-is-visible .header__top {
-/*    border-bottom: 1px solid rgba(0, 0, 0, 0.04);*/
-
-  }
 
   .nav-wrap-is-visible .header__nav-wrap {
     opacity: 1;
     visibility: visible;
+    width: 500px;
   }
 
   .nav-wrap-is-visible .header__search-trigger {
@@ -2914,7 +2968,6 @@ body.search-is-visible {
 
 
 
-
 /* ===================================================================
  * # site content & footer 
  *
@@ -2939,7 +2992,7 @@ body.search-is-visible {
 }
 
 .content__page {
-  max-width: 1200px;
+  max-width: 1500px;
   padding-bottom: 5rem;
 }
 
