@@ -2040,6 +2040,9 @@ input::-moz-focus-inner {
  * common and reusable styles
  * ------------------------------------------------------------------- */
 @media screen and (max-width:1800px) {
+  .display-1 {
+    padding-top: 0.5rem;
+  }
   .masonry-wrap {
     max-width: 1260px;
   }
@@ -2075,6 +2078,7 @@ input::-moz-focus-inner {
 }
 
 @media screen and (max-width:1600px) {
+
   .listing-header {
     padding: 0 1.2vw 2.4rem;
   }
@@ -2090,6 +2094,9 @@ input::-moz-focus-inner {
 }
 
 @media screen and (max-width:1500px) {
+  .display-1 {
+    padding-top: 0.5rem;
+  }
   .masonry-wrap {
     max-width: 900px;
   }
@@ -2115,12 +2122,14 @@ input::-moz-focus-inner {
 
 @media screen and (max-width:1400px) {
   .display-1 {
-    font-size: 5.6rem;
+    padding-top: 4rem;
   }
-
 }
 
 @media screen and (max-width:1100px) {
+  .display-1 {
+    padding-top: 0.5rem;
+  }
   .masonry-wrap,
   .listing-header {
     width: 89%;
@@ -2190,7 +2199,7 @@ input::-moz-focus-inner {
   .display-1 {
     word-break: keep-all;
     font-size: 4rem;
-    margin-top: 3rem;
+    margin-top: 0.5rem;
   }
 
 /*  .media-wrap {
@@ -2838,7 +2847,7 @@ body.search-is-visible {
   .nav-wrap-is-visible .header__nav-wrap {
     opacity: 1;
     visibility: visible;
-    width: 500px;
+    width: 100%;
   }
 
   .nav-wrap-is-visible .header__search-trigger {
@@ -2988,7 +2997,7 @@ body.search-is-visible {
 }
 
 .s-content {
-  padding-top: 6.4rem;
+  padding-top: 7rem;
 }
 
 .content__page {
@@ -3064,14 +3073,17 @@ body.search-is-visible {
  * ------------------------------------------------------------------- */
 @media screen and (max-width:1600px) {
   .content__page p {
-    width: 800px;
+    width: 100%;
   }
 }
 
 
 @media screen and (max-width:1400px) {
+  .s-content {
+    padding-top: 0;
+  }
   .content__page p {
-    width: 700px;
+    width: 100%;
   }
 
 }
@@ -3394,11 +3406,11 @@ body.search-is-visible {
   }
 
   .s-content {
-    padding-top: 10rem;
+    /*padding-top: 10rem;*/
   }
 
   .content__page {
-    padding-bottom: 8rem;
+    /*padding-bottom: 8rem;*/
   }
 
   .go-top {
@@ -3410,14 +3422,14 @@ body.search-is-visible {
 
 @media screen and (max-width:600px) {
   .s-content {
-    padding-top: 10rem;
+/*    padding-top: 10rem;*/
   }
 
   .content__page {
     padding-bottom: 4rem;
   }
 
-f.display-1
+.display-1
   .footer__copyright span {
     display: block;
   }
@@ -3430,7 +3442,7 @@ f.display-1
 @media screen and (max-width:400px) {
  
   .s-content {
-    padding-top: 10rem;
+/*    padding-top: 10rem;*/
   }
 }
 
