@@ -2306,6 +2306,15 @@ input::-moz-focus-inner {
 .header__nav-wrap {
   display: block;
   position: relative;
+  top:100px;
+  overflow-x: hidden;
+  align-items: stretch;
+  max-width: 100%;
+  background-color: #ffffff;
+  margin-top: 2.5rem;
+  margin-bottom: 15rem;
+  font-family: "NanumSquare", 'Open sans', 'Roboto', 'AppleSDGothicNEO', 'Noto Sans KR', sans-serif;
+  
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
@@ -2320,12 +2329,7 @@ input::-moz-focus-inner {
   justify-content: space-between;
   -webkit-align-items: stretch;
   -ms-flex-align: stretch;
-  align-items: stretch;
-  max-width: 100%;
-  background-color: #ffffff;
-  margin-top: 2.5rem;
-  margin-bottom: 15rem;
-  font-family: "NanumSquare", 'Open sans', 'Roboto', 'AppleSDGothicNEO', 'Noto Sans KR', sans-serif;
+
 }
 
 .header__nav-wrap ul {
