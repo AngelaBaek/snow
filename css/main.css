@@ -2282,7 +2282,7 @@ input::-moz-focus-inner {
  * ## header main navigation
  * ------------------------------------------------------------------- */
 
-.header__list {
+/*.header__list {
   width: 250px;
   height:100%;
   z-index: 100;
@@ -2301,7 +2301,7 @@ input::-moz-focus-inner {
   top: 100px;
   left: 0;
   border-right: 1px solid rgba(0, 0, 0, 0.1);
-}
+}*/
 
 .header__nav-wrap {
   display: block;
