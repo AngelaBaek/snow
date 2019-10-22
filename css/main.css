@@ -2819,7 +2819,7 @@ body.search-is-visible {
   }
 */
 
-  .header__list {
+ /* .header__list {
     width: 100%;
     background: transparent;
     padding: 0;
@@ -2827,7 +2827,7 @@ body.search-is-visible {
     top:0;
     bottom: auto;
   }
-
+*/
 
   .header__nav-wrap {
     z-index: 99;
