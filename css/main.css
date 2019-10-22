@@ -2282,7 +2282,7 @@ input::-moz-focus-inner {
  * ## header main navigation
  * ------------------------------------------------------------------- */
 
-/*.header__list {
+.header__list {
   width: 250px;
   height:100%;
   z-index: 100;
@@ -2296,25 +2296,17 @@ input::-moz-focus-inner {
   padding-right: 3.2rem;
   padding-left: 4.4rem;
   vertical-align: top;
+  position: fixed;
   overflow-x: hidden;
   bottom: 0;
   top: 100px;
   left: 0;
   border-right: 1px solid rgba(0, 0, 0, 0.1);
-}*/
+}
 
 .header__nav-wrap {
   display: block;
   position: relative;
-  top:100px;
-  overflow-x: hidden;
-  align-items: stretch;
-  max-width: 100%;
-  background-color: #ffffff;
-  margin-top: 2.5rem;
-  margin-bottom: 15rem;
-  font-family: "NanumSquare", 'Open sans', 'Roboto', 'AppleSDGothicNEO', 'Noto Sans KR', sans-serif;
-  
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
@@ -2329,7 +2321,12 @@ input::-moz-focus-inner {
   justify-content: space-between;
   -webkit-align-items: stretch;
   -ms-flex-align: stretch;
-
+  align-items: stretch;
+  max-width: 100%;
+  background-color: #ffffff;
+  margin-top: 2.5rem;
+  margin-bottom: 15rem;
+  font-family: "NanumSquare", 'Open sans', 'Roboto', 'AppleSDGothicNEO', 'Noto Sans KR', sans-serif;
 }
 
 .header__nav-wrap ul {
