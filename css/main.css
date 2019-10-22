@@ -73,10 +73,11 @@ html {
   }
 
 }
-
+ 
 html,
 body {
   height: 100%;
+  
 }
 
 body {
@@ -2224,26 +2225,6 @@ input::-moz-focus-inner {
 
 
 
-/* -------------------------------------------------------------------
- * ## header logo
- * ------------------------------------------------------------------- */
-.header__logo a {
-  display: block;
-  margin: 0;
-  padding: 0;
-  outline: 0;
-  border: none;
-  transition: all 0.3s;
-}
-
-.header__logo img {
-  width: 140px;
-  height: auto;
-  margin: 0;
-}
-
-
-
 /* ===================================================================
  * # site header
  *
@@ -2277,7 +2258,30 @@ input::-moz-focus-inner {
   /*  overflow-y: auto;
   overflow-x: hidden;*/
 /*  border-right: 1px solid rgba(109, 0, 251, 0.1);*/
-} 
+}
+
+
+/* -------------------------------------------------------------------
+ * ## header logo
+ * ------------------------------------------------------------------- */
+.header__logo a {
+  display: block;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: none;
+  transition: all 0.3s;
+}
+
+.header__logo img {
+  width: 140px;
+  height: auto;
+  margin: 0;
+}
+
+/* -------------------------------------------------------------------
+ * ## header main navigation
+ * ------------------------------------------------------------------- */
 
 .header__list {
   width: 250px;
@@ -2300,12 +2304,6 @@ input::-moz-focus-inner {
   left: 0;
   border-right: 1px solid rgba(0, 0, 0, 0.1);
 }
-
-
-/* -------------------------------------------------------------------
- * ## header main navigation
- * ------------------------------------------------------------------- */
-
 
 .header__nav-wrap {
   display: block;
@@ -2819,7 +2817,7 @@ body.search-is-visible {
   }
 */
 
- /* .header__list {
+  .header__list {
     width: 100%;
     background: transparent;
     padding: 0;
@@ -2827,7 +2825,7 @@ body.search-is-visible {
     top:0;
     bottom: auto;
   }
-*/
+
 
   .header__nav-wrap {
     z-index: 99;
