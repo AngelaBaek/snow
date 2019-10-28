@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+   
+    <title>MLB PARK EVENT</title>
+	
+    <link rel="stylesheet" type="text/css" href="mlb_event.css">
+<script type="text/javascript">
+<!--//
+// <![CDATA[
+	
+// 통신사 선택
+		function layerChange(){
+			if(document.getElementById("comboLayer").style.display != 'none' ){
+				document.getElementById("comboLayer").style.display = 'none';
+			}else{
+				document.getElementById("comboLayer").style.display = '';
+			}
+
+		}
+		function sfChange(val){
+			var	name = "";
+			if (val == "")
+			{		
+				document.getElementById("selectNow1").innerHTML = "SKT";
+				document.getElementById("selectNow2").innerHTML = "SKT";
+				//document.frmSearch.sf.value = "phoneSKT";
+				document.getElementById("phoneSKT").className = "selected";
+			}else{
+				if( val == 'phoneSKT'){
+					name = "SKT";
+				}else if(val == 'phoneKT'){
+					name = "KT";
+				}else if(val == 'phoneLGU'){
+					name = "LGU+";
+				}
+				document.getElementById("phoneSKT").className = "";
+				document.getElementById("phoneKT").className = "";
+				document.getElementById("phoneLGU").className = "";
+				document.getElementById("selectNow1").innerHTML = name;
+				document.getElementById("selectNow2").innerHTML = name;
+				document.getElementById(val).className = "selected";
+				//document.frmSearch.sf.value = val;
+				document.getElementById("comboLayer").style.display = 'none';
+			}
+		}
+// ]]>
+//-->
+</script>
+</head>
+
+<body class="event_mlb">
+	<div class="mlb_event">
+		<h2 class="tit_h2_event txt_blind">MLB PARK 단독 이벤트</h2>
+		<p class="event_slogan txt_blind">원키퍼 신규가입하고 2018 프로야구 직관 가자!</p>
+		<div class="prizes_visual txt_blind">비타500 모바일쿠폰-100%증정, 티켓링크 프로야구 예매권(1인 2매)-30명</div>
+		
+		<div class="mobile_num_insert">
+			<fieldset>
+				<legend>통신사선택 및 휴대폰 입력</legend>
+				<a href="javascript:;" class="combo_filter" id="selectNow1" onclick="layerChange();return false;">SKT</a>
+				<input type="tel" class="txt_tel" placeholder="휴대폰번호 입력" />
+				
+				<!-- skt 클릭시 뜨는 레이어 -->
+				<ul class="combo_layer" style="display:none;" id="comboLayer">
+					<li class="current"><a href="javascript:;" id="selectNow2" onclick="layerChange();return false;">SKT</a></li>
+					<li id="phoneSKT" class="selected"><a href="javascript:;" onclick="sfChange('phoneSKT');return false;">SKT</a></li>
+					<li id="phoneKT"><a href="javascript:;" onclick="sfChange('phoneKT');return false;">KT</a></li>
+					<li id="phoneLGU"><a href="javascript:;" onclick="sfChange('phoneLGU');return false;">LGU+</a></li>
+				</ul>
+				<input type="button" value="비타500 100% 받기" class="btn_event_entry" onclick="" />
+			</fieldset>
+			<p class="txt_hacking_info">피싱해킹 보상 보험 제공 (최대 100만원)</p>
+		</div>
+		
+		<div class="event_info">
+			<h3 class="tit_h3_event">이벤트 기간</h3>
+			<p>2018.08.09 (목) ~ 2018.08.23 (목), 총 15일</p>
+			<h3 class="tit_h3_event">응모방법</h3>
+			<p>해당 페이지에서 <span>원키퍼 신규가입시 자동 응모</span></p>
+			<h3 class="tit_h3_event">이벤트 경품</h3>
+			<p>비타500(100ml) GS25 교환권 100% 전원 증정 <br/>티켓링크 프로야구 16,000원 예매권 1인 2매 / 30명 추첨</p>
+			<h3 class="tit_h3_event">당첨자 발표</h3>
+			<p>2018.08.29 (수) 당첨자 개별통보 <br/><span class="txt_small">(당첨자 발표일 기준 원키퍼 해지한 경우 당첨 제외)</span></p>
+		</div>
+	</div>
+	
+	<div class="event_caution_area">	
+		<div class="event_caution">
+			<h3 class="tit_h3_event">경품 지급 방법 및 이벤트 유의사항</h3>
+			<ul>
+				<li>‘프로야구 예매권’은 당첨자 발표일에 원키퍼에 가입한 휴대폰번호로 문자 쿠폰이 발송됩니다. (티켓링크에서 사용가능)</li>
+				<li>‘비타500(100ml)’은 당첨자 발표일에 원키퍼에 가입한 휴대폰 번호로 모바일 쿠폰이 발송됩니다. (GS25에서 실물로 교환 가능)</li>
+				<li>응모자가 작성한 정보가 정확하지 않아 발생하는 불이익에 대해서 당사는 책임지지 않습니다.</li>
+				<li>이벤트 내용은 내부 사정으로 변경될 수 있습니다</li>
+				<li>본 서비스는 ㈜인포바인이 운영합니다.</li>
+				<li>이벤트 문의 : <a href="mailto:event@infovine.co.kr">event@infovine.co.kr</a></li>
+			</ul>
+		</div>
+	</div>
+	
+	<div class="one_keeper_info">
+		<div class="one_keeper_is">
+			<h3 class="tit_h3_event">원키퍼란?</h3>
+			<a href="http://www.one-keeper.co.kr/" target="_blank" class="btn_detail_view">자세히 알아보기<span>&rarr;</span></a>
+			<p>휴대폰에 저장된 민감한 개인정보와 사생활정보를 앱에 암호화 저장하여 안전하게 관리할 수 있는 서비스입니다.</p>
+		</div>
+	</div>
+</body>
+
+</html>
