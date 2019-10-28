@@ -24,7 +24,7 @@
  *      ## additional typo styles
  *      ## skillbars
  *      ## alert box 
- *      ## pagination 
+ *      ## pagination content__page
  *  # Common and Reusable Styles
  *      ## animation stuff 
  *      ## entry media
@@ -3022,7 +3022,7 @@ body.search-is-visible {
 }
 
 .content__page p {
-  width: 1000px;
+  width: 1200px;
   margin-left: auto;
   margin-right: auto;
   font-size: 15px;
