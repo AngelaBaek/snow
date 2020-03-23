@@ -2771,7 +2771,7 @@ body.search-is-visible {
 @media screen and (max-width:1200px) {
   .s-header {
     width: 300px;
-    padding-right: 2.8rem;
+    padding-right: 3.2rem;
     padding-left: 4rem;
   }
 
