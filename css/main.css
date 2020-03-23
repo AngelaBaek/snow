@@ -3003,7 +3003,7 @@ body.search-is-visible {
 }
 
 .content__page {
-  max-width: 800px;
+  max-width: 100%;
   padding-bottom: 5rem;
 }
 
