@@ -2985,8 +2985,8 @@ body.search-is-visible {
  * ------------------------------------------------------------------- */
 .s-content,
 .s-footer {
-  padding-left: 330px;
-  padding-right: 100px;
+  padding-left: 360px;
+  padding-right: 60px;
   max-width: 2140px;
 }
 
@@ -3394,8 +3394,8 @@ body.search-is-visible {
 @media screen and (max-width:1200px) {
   .s-content,
   .s-footer {
-    padding-left: 290px;
-    padding-right: 80px;
+    padding-left: 300px;
+    padding-right: 20px;
   }
 
 }
