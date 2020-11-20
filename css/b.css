@@ -120,6 +120,12 @@ a:active {
   outline: 0;
 }
 
+button . btn  {
+width: 100%;
+padding: 10px 20px;
+background-color: #c8c8c8;
+
+}
 
 /* ===================================================================
  * # typography & general theme styles
@@ -378,22 +384,104 @@ hr {
 }
 
 .main_b_party {
-margin: 50px 10px 20px;
+margin: 80px 0 30px;
 text-align: center;
+
 }
 
 
 .main-video {
   display: inline-block;
-
+  vertical-align: middle;
 }
 
 
-.display-2 {
-  margin-top: 0;
-  font-size: 26pt;
-  font-weight: 700;
 
+.display-2 {
+  font-family: 'yg-jalnan';
+  margin-top: 10px;
+  font-size: 22pt;
+  font-weight: 700;
+}
+
+
+.blink {
+    -webkit-animation: blink 1.5s linear infinite;
+} 
+
+@-webkit-keyframes blink {
+    0% { background-color: red; }
+    33% { background-color: yellow; }
+    66% { background-color: blue; }
+    100% { background-color: green; }
+
+/*    from { background-color: red;}
+    to {background-color: green;}  */
+}
+
+
+@font-face {
+    font-family: 'yg-jalnan';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+.dday-party {
+  margin: 50px 0;
+  font-weight: 700;
+}
+
+
+
+
+/* ===================================================================
+ * # buttons
+ *
+ * ------------------------------------------------------------------- */
+.btn,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  color: #ffffff;
+  display: inline-block;
+  font-family: "NanumSquare", 'Open sans', 'Roboto', 'AppleSDGothicNEO', 'Noto Sans KR', sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  height: 6rem;
+  line-height: 5.6rem;
+  padding: 0 3.2rem;
+  margin: 0 0.4rem 1.6rem 0;
+  text-decoration: none;
+  text-align: center;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #000000;
+  border: 0.2rem solid #dddddd;
+}
+
+.btn:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+.btn:focus,
+button:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="button"]:focus {
+  background-color: #222222;
+  border-color: #dddddd;
+  color: #ffffff;
+  outline: 0;
 }
 
 
@@ -946,74 +1034,8 @@ select:-webkit-autofill:focus {
  * # buttons
  *
  * ------------------------------------------------------------------- */
-.btn,
-button,
-input[type="submit"],
-input[type="reset"],
-input[type="button"] {
-  display: inline-block;
-  font-family: "NanumSquare", 'Open sans', 'Roboto', 'AppleSDGothicNEO', 'Noto Sans KR', sans-serif;
-  font-weight: 600;
-  font-size: 1.3rem;
-  text-transform: uppercase;
-  letter-spacing: 0.5rem;
-  height: 6rem;
-  line-height: 5.6rem;
-  padding: 0 3.2rem;
-  margin: 0 0.4rem 1.6rem 0;
-  color: #000000;
-  text-decoration: none;
-  text-align: center;
-  white-space: nowrap;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: #d3d3d3;
-  border: 0.2rem solid #d3d3d3;
-}
 
-.btn:hover,
-button:hover,
-input[type="submit"]:hover,
-input[type="reset"]:hover,
-input[type="button"]:hover,
-.btn:focus,
-button:focus,
-input[type="submit"]:focus,
-input[type="reset"]:focus,
-input[type="button"]:focus {
-  background-color: #c3c3c3;
-  border-color: #c3c3c3;
-  color: #000000;
-  outline: 0;
-}
-
-/* button primary
- * ------------------------------------------------- */
-.btn.btn--primary,
-button.btn--primary,
-input[type="submit"].btn--primary,
-input[type="reset"].btn--primary,
-input[type="button"].btn--primary {
-  background: #000000;
-  border-color: #000000;
-  color: #ffffff;
-}
-
-.btn.btn--primary:hover,
-button.btn--primary:hover,
-input[type="submit"].btn--primary:hover,
-input[type="reset"].btn--primary:hover,
-input[type="button"].btn--primary:hover,
-.btn.btn--primary:focus,
-button.btn--primary:focus,
-input[type="submit"].btn--primary:focus,
-input[type="reset"].btn--primary:focus,
-input[type="button"].btn--primary:focus {
-  background: #33998a;
-  border-color: #33998a;
-}
+  
 
 /* button modifiers
  * ------------------------------------------------- */

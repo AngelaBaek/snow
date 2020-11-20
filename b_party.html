@@ -59,21 +59,20 @@
                     <div class="main_b_party">
 
                         <div class="main-video">
-                                <video width="85" controls Autoplay=autoplay loop="loop" muted="muted">
+                                <video width="82" controls Autoplay=autoplay loop="loop" muted="muted">
                                     <source src="images/b/IMG_7251.mp4" type="video/mp4">
                                 </video>
                             </div>
 
                         <div class="main-video">
-                                <h1 class="display-2">B-Party</h1>
+                                <h1 class="display-2 blink">B-party </h1>
                             </div>
 
                         <div class="main-video">
-                                 <video width="85" controls Autoplay=autoplay loop="loop" muted="muted">
+                                 <video width="82" controls Autoplay=autoplay loop="loop" muted="muted">
                                     <source src="images/b/IMG_7252.mp4" type="video/mp4">
                                 </video>
                         </div>
-
 
                     </div>
 
@@ -81,54 +80,23 @@
 
                     <div class="content__page-header">
                         
-                    </div> 
-
-                    <h2>Education</h2>
-                    <p>Hoseo University, Industrial design<span class="day">&emsp;2008-2014</span></p>
-
-                    <br>
-
-                    <h2>Experiences</h2>
-                    <p>UX/UI,Web, Graphic, Branding, Motion Designer - INFOVINE<span class="day">&emsp;2017 - 2019</span></p>
-                    <p>UX/UI, Graphic, Print Designer - TOUCHWORKS<span class="day">&emsp;2015 - 2017</span><p>
-                    <p>UX/UI, Graphic, Print Designer - WOOWASISTER<span class="day">&emsp;2014</span></p>
-                    <p>Research  - KIPI<span class="day">&emsp;2013</span></p>
-                    <p>Story Writer, Plan, 3D modeling, Concept design internship - DICONSOFT ARTCENTER<span class="day">&emsp;2012</span></p>
-
-                    <br>
-
-                    <h2>Awards</h2>
-                    <p>Winner (1st), KFK award<span class="day">&emsp;2014</span></p>
-                    <p>Winner(Finalist), IF concept design award<span class="day">&emsp;2013</span><p>
-                    <p>Winner, I love Character Awards <span class="day">&emsp;2012</span></p>
-                    <p>Winner, Korea eyewear design competition<span class="day">&emsp;2012</span></p>
-                    <p>Winner, Seoul public design competition <span class="day">&emsp;2011</span></p>
-                    <p>Winner, Reddot concept design award <span class="day">&emsp;2011</span></p>
+ 
+                    <p>
+                       안녕하세요. 주인장 B씨 입니다. <br>
+                       첫 집들이 겸 연말파티를 준비하게 되었습니다! <br>
+                        올해는 코로나때문에 나가서 제대로 놀지도 못해서 우울했던 시기들이 많았는데, 집에서 열심히 즐기자구요!<br> 
+                    </p>
                     
-                    <br>
 
+                        <section id="birthday">
+                          <div class="dday-party">
+                                <span id="dday"></span> 남았습니다!<div>
+                        </section>
 
+                        <button id="btn-party-1" onclick="location.href='https://www.notion.so/anglea/B-party-c855b1c745804ba0bda3b3ed30f6b8a2'">비-파티 가이드</button>
                     </div>
 
-                    <h2>Interests</h2>
-                    <p>Making, Good music, Quize, Reding book</p>
-                    <br><br><br>
 
-                    <!-- <ul class="content-link">
-                        <li class="resume">
-                            Resume -
-                            <a href="images/baek.pdf">한글,</a>
-                            <a href="imgees/beak.pdf">English</a>
-                        </li>
-                        <li class="sns">
-                            <a href="https://www.pinterest.co.kr/angela100282">Pintrest,</a> 
-                            <a href="https://blog.naver.com/100282">NaverBlog,</a>
-                            <a href="https://www.instagram.com/100282__">Instagram,</a>
-                            <a href="https://www.facebook.com/yeonhee.baek">Facebook,</a>
-                            <a href="https://www.linkedin.com/in/yeonhee-baek-963131150">Linkedin</a>
-                        </li>
-                    </ul> -->
-                    </div>
 
                 </section>
             </main>
@@ -138,6 +106,38 @@
     </div> 
     
     <!-- javascript -->
+<script>
+    var v = new Date().getFullYear(),
+      z = new Date("Dec 26, " + v + " 00:00:00").getTime(),
+      x = setInterval(function() {
+    var f = new Date().getTime(),
+          g = z - f,
+          y = g / 864e5,
+          a = Math.floor(g / 864e5),
+         b = Math.floor(g % 864e5 / 36e5),
+          c = Math.floor(g % 36e5 / 6e4),
+          d = Math.floor(g % 6e4 / 1e3),
+          zz = v + 1,
+          aa = new Date("Dec 26, " + zz + " 00:00:00").getTime(),
+          bb = aa - f,
+          cc = bb / 864e5,
+          dd = Math.floor(bb / 864e5),
+          ee = Math.floor(bb % 864e5 / 36e5),
+          ff = Math.floor(bb % 36e5 / 6e4),
+          gg = Math.floor(bb % 6e4 / 1e3);
+    if (y <= -1) {
+      document.getElementById("dday").innerText = `${dd}일 ${ee}시간 ${ff}분 ${gg}초`
+    }
+    else {
+      if (0 >= g) {
+        clearInterval(x), document.getElementById("birthday").innerHTML = "Happy Birthday!!", document.getElementById("birthday").classList.add("dday")
+      }
+      else {
+        document.getElementById("dday").innerText = `${a}일 ${b}시간 ${c}분 ${d}초`
+      }
+    }
+ }, 500)
+</script>
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
