@@ -432,11 +432,6 @@ text-align: center;
 
 
 
-.canvas { 
-  position:absolute; width:1000px; height:500px; 
-  top:50%; left:50%; 
-  transform:translate(-50%, -50%);  
-}
 
 
 .dday-party {
