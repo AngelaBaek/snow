@@ -377,10 +377,11 @@ hr {
   height: 0;
 }
 
-main-video {
-  float: left;
-  margin-right: 10px;
+
+.main-video {
+  display: inline-block;
 }
+
 
 
 /* ------------------------------------------------------------------- 
