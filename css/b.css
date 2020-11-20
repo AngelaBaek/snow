@@ -471,8 +471,13 @@ input[type="button"] {
   -moz-osx-font-smoothing: grayscale;
   background-color: #000000;
   border: 0.2rem solid #dddddd;
+
 }
 
+.btn-party-1{
+  margin-bottom: 100px;
+
+}
 .btn:hover,
 button:hover,
 input[type="submit"]:hover,
@@ -3045,7 +3050,7 @@ body.search-is-visible {
 
 .content__page-header {
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 10rem;
 }
 
 .content__page span.day {
